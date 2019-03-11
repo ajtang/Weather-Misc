@@ -1,0 +1,90 @@
+%YAML 1.1
+---
+actions:
+- utter_confirm
+- action_slot_reset
+- utter_unclear
+- utter_check_another_one
+- utter_ask_location
+- utter_boarding
+- action_weather
+- utter_input_curr
+- utter_thanks
+- action_save_origin
+- utter_date
+- utter_input_date
+- action_save_best
+- utter_goodbye
+- utter_greet
+- action_iata_convert
+- action_top_dest
+- action_save_destination
+- action_get_flight
+- action_save_date
+- utter_destination
+entities:
+- from
+- to
+- pop_date
+- pop_dest
+- leave
+- tempLoc
+- weath
+- date
+intents:
+- destination
+- greet
+- goodbye
+- inform
+- affirmation
+- deny
+- flight
+slots:
+  date:
+    type: text
+  from:
+    type: text
+  location:
+    type: text
+  pop_date:
+    type: text
+  pop_dest:
+    type: text
+  tempLoc:
+    type: text
+  to:
+    type: text
+templates:
+  utter_another_time:
+  - text: Do you want to check another destination month?
+  utter_ask_location:
+  - text: In what location?
+  utter_boarding:
+  - text: We'll help you find the best flight outta here. First, please provide current
+      location (City, [State/Province], Country)
+  utter_check_another_one:
+  - text: Do you want to make another inquiry?
+  utter_confirm:
+  - text: I will be making inquiry for flight from {from} to {to} on {date}. Is that
+      correct?
+  utter_date:
+  - text: What is the date for your travel (in YYYY-MM-DD)?
+  utter_destination:
+  - text: And the destination airport code?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?
+  utter_input_curr:
+  - text: What is the nearest airport to you?
+  utter_input_date:
+  - text: Please enter a month in the past (YYYY-MM).
+  utter_invalid_city:
+  - text: Sorry I cannot schedule a flight with that Location. Please choose another.
+  utter_select_best:
+  - text: Would you like to check flights for {tempLoc}?
+  utter_thanks:
+  - text: Thanks for contacting us. Have a good day!
+  utter_unclear:
+  - text: I am not sure what you want to say. Please try again.

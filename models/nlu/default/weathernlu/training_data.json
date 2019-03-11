@@ -1,0 +1,381 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "Berlin",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "What's the weather in Berlin at the moment?"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see ya"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "inform",
+        "text": "What's the weather today?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "London",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "What's the weather in London today?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "Paris",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Show me what's the weather in Paris"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "Vilnius",
+            "entity": "tempLoc"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "value": "weather",
+            "entity": "weath"
+          }
+        ],
+        "text": "I wonder what is the weather in Vilnius right now?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "weather",
+            "entity": "weath"
+          }
+        ],
+        "text": "what is the weather?"
+      },
+      {
+        "intent": "inform",
+        "text": "Tell me the weather"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "Barcelona",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Is the weather nice in Barcelona today?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "London",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "I am going to London today and I wonder what is the weather out there?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 25,
+            "end": 34,
+            "value": "Amsterdam",
+            "entity": "tempLoc"
+          },
+          {
+            "start": 48,
+            "end": 55,
+            "value": "weather",
+            "entity": "weath"
+          }
+        ],
+        "text": "I am planning my trip to Amsterdam. What is the weather out there?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "Dublin",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Show me the weather in Dublin, please"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "London",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "in London"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Lithuania",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Lithuania"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "Italy",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Oh, sorry, in Italy"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "Vilnius",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Tell me the weather in Vilnius"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "Italy",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "The weather condition in Italy"
+      },
+      {
+        "intent": "destination",
+        "entities": [
+          {
+            "start": 41,
+            "end": 48,
+            "value": "2017-08",
+            "entity": "pop_date"
+          }
+        ],
+        "text": "What was the most popular destination in 2017-08?"
+      },
+      {
+        "intent": "destination",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "2017-01",
+            "entity": "pop_date"
+          }
+        ],
+        "text": "popular destination in 2017-01"
+      },
+      {
+        "intent": "flight",
+        "text": "Plan a flight"
+      },
+      {
+        "intent": "destination",
+        "text": "what's the best place to be?"
+      },
+      {
+        "intent": "destination",
+        "text": "I don't want to be here"
+      },
+      {
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "take a trip",
+            "entity": "leave"
+          }
+        ],
+        "text": "let's take a trip"
+      },
+      {
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "fly me",
+            "entity": "leave"
+          }
+        ],
+        "text": "please fly me out"
+      },
+      {
+        "intent": "affirmation",
+        "text": "yes"
+      },
+      {
+        "intent": "affirmation",
+        "text": "yeah"
+      },
+      {
+        "intent": "deny",
+        "text": "nah"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "flight",
+        "text": "Paris"
+      },
+      {
+        "intent": "flight",
+        "text": "Los Angeles"
+      },
+      {
+        "intent": "flight",
+        "text": "Berlin"
+      },
+      {
+        "intent": "flight",
+        "text": "Dallas"
+      },
+      {
+        "intent": "destination",
+        "text": "I want to go somewhere"
+      },
+      {
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "Paris",
+            "entity": "tempLoc"
+          },
+          {
+            "start": 2,
+            "end": 12,
+            "value": "want to go",
+            "entity": "leave"
+          }
+        ],
+        "text": "I want to go to Paris"
+      },
+      {
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "Rome",
+            "entity": "tempLoc"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "let's go",
+            "entity": "leave"
+          }
+        ],
+        "text": "let's go to Rome"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

@@ -75,25 +75,35 @@ class BestDest(Action):
 			dispatcher.utter_message(error)
 			return[]
 		return [SlotSet('pop_dest',desti)]
-
+class ShiftTop(Action):
+	def name(self):
+		return 'action_shift_best'
+		
+	def run(self, dispatcher, tracker, domain):
+		orig = tracker.get_slot('pop_dest')
+		if not orig:
+			dispatcher.utter_message("No top best")
+			return [UserUtteranceReverted()]
+		return [SlotSet('tempLoc',orig)]
+'''
 class LoadBest(Action):
 	def name(self):
 		return 'action_save_best'
 		
 	def run(self, dispatcher, tracker, domain):
-		orig = next(tracker.get_latest_entity_values("pop_dest"), None)
+		orig = next(tracker.get_latest_entity_values("tempLoc"), None)
 		if not orig:
 			dispatcher.utter_message("No top best")
 			return [UserUtteranceReverted()]
 		return [SlotSet('from',orig)]
-
+'''
 
 class SaveOrigin(Action):
 	def name(self):
 		return 'action_save_origin'
 		
 	def run(self, dispatcher, tracker, domain):
-		orig = next(tracker.get_latest_entity_values("tempLoc"), None)
+		orig = tracker.get_slot('tempLoc')
 		if not orig:
 			dispatcher.utter_message("Sorry I cannot schedule a flight from that Location. Please choose another.")
 			return [UserUtteranceReverted()]
@@ -106,7 +116,7 @@ class SaveDestination(Action):
 		return 'action_save_destination'
 		
 	def run(self, dispatcher, tracker, domain):
-		dest = next(tracker.get_latest_entity_values("tempLoc"), None)
+		dest = tracker.get_slot('tempLoc')
 		if not dest:
 			dispatcher.utter_message("Sorry I cannot schedule a flight to that Location. Please choose another.")
 			return [UserUtteranceReverted()]
@@ -118,7 +128,7 @@ class SaveDate(Action):
 		return 'action_save_date'
 		
 	def run(self, dispatcher, tracker, domain):
-		inp = next(tracker.get_latest_entity_values("date"), None)
+		inp = tracker.get_slot('date')
 		if not inp:
 			dispatcher.utter_message("Please enter a valid date")
 			return [UserUtteranceReverted()]
@@ -129,7 +139,7 @@ class ActionSlotReset(Action):
 		return 'action_slot_reset' 	
 	def run(self, dispatcher, tracker, domain): 		
 		return[AllSlotsReset()]
-'''
+
 class IATAConvert(Action):
 	def name(self):
 		return 'action_iata_convert'
@@ -141,9 +151,6 @@ class IATAConvert(Action):
 				if conv in p["location"]:
 					convd = p["code"]
 					return [SlotSet('tempLoc',convd)]
-				else:
-					return []
-'''
 
 class getFlightStatus(Action):
 	def name(self):
@@ -162,7 +169,7 @@ class getFlightStatus(Action):
 			 #What are the best offers for flights from Madrid to Oporto today?
 			
 			response = amadeus.shopping.flight_offers.get(
-				origin='orig', destination='dest', departureDate='dat')
+				origin=orig, destination=dest, departureDate=dat)
 
 			resp = response.data
 			L1 = resp[0]['offerItems']

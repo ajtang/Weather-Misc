@@ -12,14 +12,16 @@ actions:
 - utter_check_another_one
 - utter_thanks
 - utter_unclear
+- utter_select_best
+- utter_another_time
 - action_save_origin
 - action_save_destination
 - action_save_date
 - action_get_flight
 - action_slot_reset
 - action_top_dest
-- action_save_best
 - action_iata_convert
+- action_shift_best
 
 entities:
 - date

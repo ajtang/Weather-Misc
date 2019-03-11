@@ -1,44 +1,46 @@
 %YAML 1.1
 ---
 actions:
-- utter_confirm
-- action_slot_reset
-- utter_unclear
-- utter_check_another_one
-- utter_ask_location
-- utter_boarding
-- action_weather
 - utter_input_curr
-- utter_thanks
-- action_save_origin
-- utter_date
-- utter_input_date
-- action_save_best
-- utter_goodbye
-- utter_greet
-- action_iata_convert
-- action_top_dest
-- action_save_destination
-- action_get_flight
-- action_save_date
 - utter_destination
+- utter_date
+- action_weather
+- action_save_destination
+- utter_confirm
+- utter_another_time
+- utter_check_another_one
+- utter_greet
+- utter_boarding
+- utter_input_date
+- utter_ask_location
+- utter_goodbye
+- action_iata_convert
+- action_shift_best
+- utter_select_best
+- utter_unclear
+- action_save_origin
+- utter_thanks
+- action_save_date
+- action_slot_reset
+- action_get_flight
+- action_top_dest
 entities:
-- from
-- to
-- pop_date
-- pop_dest
 - leave
+- to
+- from
+- pop_date
 - tempLoc
-- weath
 - date
+- weath
+- pop_dest
 intents:
 - destination
+- deny
+- affirmation
 - greet
+- flight
 - goodbye
 - inform
-- affirmation
-- deny
-- flight
 slots:
   date:
     type: text

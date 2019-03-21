@@ -3,7 +3,7 @@
     "pipeline": [
         {
             "model": "en",
-            "case_sensitive": false,
+            "case_sensitive": true,
             "name": "nlp_spacy",
             "class": "rasa_nlu.utils.spacy_utils.SpacyNLP"
         },
@@ -82,6 +82,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20190311-045221",
+    "trained_at": "20190320-212743",
     "rasa_nlu_version": "0.14.4"
 }

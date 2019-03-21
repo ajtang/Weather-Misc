@@ -53,7 +53,7 @@ class BestDest(Action):
 		orig=temp.upper()
 		#country=tracker.get_slot('country')
 		# Most travelled YYYY-MM
-		bestDate = tracker.get_slot('pop_date')
+		bestDate = tracker.get_slot('pop_date').replace(" ", "")
 		try:
 			'''
 			Where were people flying to from ORIG during the?
@@ -128,7 +128,7 @@ class SaveDate(Action):
 		return 'action_save_date'
 		
 	def run(self, dispatcher, tracker, domain):
-		inp = tracker.get_slot('date')
+		inp = tracker.get_slot('date').replace(" ", "")
 		if not inp:
 			dispatcher.utter_message("Please enter a valid date")
 			return [UserUtteranceReverted()]
@@ -163,7 +163,7 @@ class getFlightStatus(Action):
 		)
 		orig=tracker.get_slot('from').upper()
 		dest=tracker.get_slot('to').upper()
-		dat=tracker.get_slot('date') # YYYY-MM-DD
+		dat=tracker.get_slot('date').replace(" ", "") # YYYY-MM-DD
 		try:
 			
 			 #What are the best offers for flights from Madrid to Oporto today?
@@ -175,7 +175,7 @@ class getFlightStatus(Action):
 			L1 = resp[0]['offerItems']
 			P1 = L1[0]['pricePerAdult']
 			price = P1['total']
-			print("Adult Fare Cost: $" + price)
+			dispatcher.utter_message("Adult Fare Cost: $" + price)
 			L2 = L1[0]['services']
 			L3 = L2[0]['segments']
 			num = 0

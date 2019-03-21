@@ -67,6 +67,14 @@
       },
       {
         "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "weather",
+            "entity": "weath"
+          }
+        ],
         "text": "What's the weather today?"
       },
       {
@@ -77,6 +85,12 @@
             "end": 28,
             "value": "London",
             "entity": "tempLoc"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "value": "weather",
+            "entity": "weath"
           }
         ],
         "text": "What's the weather in London today?"
@@ -89,6 +103,12 @@
             "end": 35,
             "value": "Paris",
             "entity": "tempLoc"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "weather",
+            "entity": "weath"
           }
         ],
         "text": "Show me what's the weather in Paris"
@@ -125,6 +145,14 @@
       },
       {
         "intent": "inform",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "weather",
+            "entity": "weath"
+          }
+        ],
         "text": "Tell me the weather"
       },
       {
@@ -135,6 +163,12 @@
             "end": 32,
             "value": "Barcelona",
             "entity": "tempLoc"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "value": "weather",
+            "entity": "weath"
           }
         ],
         "text": "Is the weather nice in Barcelona today?"
@@ -147,6 +181,12 @@
             "end": 20,
             "value": "London",
             "entity": "tempLoc"
+          },
+          {
+            "start": 52,
+            "end": 59,
+            "value": "weather",
+            "entity": "weath"
           }
         ],
         "text": "I am going to London today and I wonder what is the weather out there?"
@@ -177,6 +217,12 @@
             "end": 29,
             "value": "Dublin",
             "entity": "tempLoc"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "weather",
+            "entity": "weath"
           }
         ],
         "text": "Show me the weather in Dublin, please"
@@ -225,6 +271,12 @@
             "end": 30,
             "value": "Vilnius",
             "entity": "tempLoc"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "weather",
+            "entity": "weath"
           }
         ],
         "text": "Tell me the weather in Vilnius"
@@ -237,6 +289,12 @@
             "end": 30,
             "value": "Italy",
             "entity": "tempLoc"
+          },
+          {
+            "start": 4,
+            "end": 11,
+            "value": "weather",
+            "entity": "weath"
           }
         ],
         "text": "The weather condition in Italy"
@@ -303,38 +361,158 @@
       },
       {
         "intent": "affirmation",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "yes",
+            "entity": "affirm"
+          }
+        ],
         "text": "yes"
       },
       {
         "intent": "affirmation",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "yea",
+            "entity": "affirm"
+          }
+        ],
+        "text": "yea"
+      },
+      {
+        "intent": "affirmation",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "mhmm",
+            "entity": "affirm"
+          }
+        ],
+        "text": "mhmm"
+      },
+      {
+        "intent": "affirmation",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "yeah",
+            "entity": "affirm"
+          }
+        ],
         "text": "yeah"
       },
       {
         "intent": "deny",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "nah",
+            "entity": "deny"
+          }
+        ],
         "text": "nah"
       },
       {
         "intent": "deny",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "nope",
+            "entity": "deny"
+          }
+        ],
+        "text": "nope"
+      },
+      {
+        "intent": "deny",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "no way",
+            "entity": "deny"
+          }
+        ],
+        "text": "no way"
+      },
+      {
+        "intent": "deny",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "no",
+            "entity": "deny"
+          }
+        ],
         "text": "no"
       },
       {
-        "intent": "flight",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Paris",
+            "entity": "tempLoc"
+          }
+        ],
         "text": "Paris"
       },
       {
-        "intent": "flight",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Los Angeles",
+            "entity": "tempLoc"
+          }
+        ],
         "text": "Los Angeles"
       },
       {
-        "intent": "flight",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Berlin",
+            "entity": "tempLoc"
+          }
+        ],
         "text": "Berlin"
       },
       {
-        "intent": "flight",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Dallas",
+            "entity": "tempLoc"
+          }
+        ],
         "text": "Dallas"
       },
       {
         "intent": "destination",
+        "entities": [
+          {
+            "start": 2,
+            "end": 12,
+            "value": "want to go",
+            "entity": "leave"
+          }
+        ],
         "text": "I want to go somewhere"
       },
       {
@@ -372,6 +550,90 @@
           }
         ],
         "text": "let's go to Rome"
+      },
+      {
+        "intent": "destination",
+        "text": "best place to go?"
+      },
+      {
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Toronto",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Toronto"
+      },
+      {
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Richmond",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Richmond"
+      },
+      {
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 26,
+            "value": "Richmond, British Columbia",
+            "entity": "tempLoc"
+          }
+        ],
+        "text": "Richmond, British Columbia"
+      },
+      {
+        "intent": "destination",
+        "text": "i don't know where to go"
+      },
+      {
+        "intent": "destination",
+        "text": "i don't know"
+      },
+      {
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "2019-05-03",
+            "entity": "date"
+          }
+        ],
+        "text": "2019-05-03"
+      },
+      {
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "2019-06-08",
+            "entity": "date"
+          }
+        ],
+        "text": "2019-06-08"
+      },
+      {
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "2019-10-11",
+            "entity": "date"
+          }
+        ],
+        "text": "2019-10-11"
       }
     ],
     "regex_features": [],

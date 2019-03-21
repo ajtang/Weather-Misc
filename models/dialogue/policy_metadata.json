@@ -1,0 +1,67 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "pop_date",
+        "date",
+        "tempLoc"
+      ]
+    },
+    "action_iata_convert": {
+      "slots": [
+        "tempLoc"
+      ]
+    },
+    "action_save_origin": {
+      "slots": [
+        "from"
+      ]
+    },
+    "action_top_dest": {
+      "slots": [
+        "pop_dest"
+      ]
+    },
+    "action_shift_best": {
+      "slots": [
+        "tempLoc"
+      ]
+    },
+    "action_weather": {
+      "slots": [
+        "location"
+      ]
+    },
+    "action_save_destination": {
+      "slots": [
+        "to"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "action_get_flight": {
+      "slots": []
+    },
+    "utter_ask_location": {
+      "slots": []
+    }
+  },
+  "python": "3.6.7",
+  "max_histories": [
+    5,
+    3
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ],
+  "trained_at": "20190321-004754",
+  "rasa_core": "0.13.3",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.2"
+}
